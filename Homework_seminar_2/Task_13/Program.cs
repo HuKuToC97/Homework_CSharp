@@ -14,10 +14,10 @@ int ReadInt(string msg)
     return userNumber;
 }
 
-
 int userNumber = ReadInt("Введите положительное число больше 99. Ваше число:");
 int countNumber = userNumber;
 int i = 0;
+
 while (countNumber > 9)
 {
     countNumber /= 10;
