@@ -15,7 +15,7 @@ int ReadInt(string msg)
 }
 
 
-int userNumber = ReadInt("Введите число:");
+int userNumber = ReadInt("Введите положительное число больше 99. Ваше число:");
 int countNumber = userNumber;
 int i = 0;
 while (countNumber > 9)
@@ -27,12 +27,12 @@ while (countNumber > 9)
 
 if (i <= 1)
 {
-    System.Console.WriteLine($"{userNumber} -> третьей цифры нет");
+    System.Console.WriteLine($"Для числа {userNumber} третьей цифры нет, т.к. это число меньше 100");
 }
 else
 {
     int helpCount = (int)Math.Pow(10, (i - 2));
-    System.Console.WriteLine($"{userNumber} -> {userNumber / helpCount % 10}");
+    System.Console.WriteLine($"Для числа {userNumber} треья цифра -> {userNumber / helpCount % 10}");
 }
 
 

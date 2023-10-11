@@ -12,6 +12,12 @@ int ReadInt(string msg)
     userNumber = int.Parse(userNumberForParse);
     return userNumber;
 }
-int userNumber = ReadInt("Введите число:");
-int secondNumber = userNumber /10 % 10;
-System.Console.WriteLine(secondNumber);
+int userNumber = ReadInt("Введите число трехзначное число:");
+if (userNumber > 99 && userNumber < 1000)
+{
+    System.Console.WriteLine($"Втрая цифра числа {userNumber} это {userNumber /10 % 10}");
+}
+else
+{
+    System.Console.WriteLine($"{userNumber} <- не трехзначное попробуйте перезапустить программу и ввести число от 100 до 999");
+}
