@@ -26,12 +26,12 @@ int ReadConsoleToInt(string message)
 
 
 System.Console.Clear();
-System.Console.WriteLine("Данная рограмма выведет сумму натуральных элементов в промежутке от M до N");
+System.Console.WriteLine("Данная программа выведет сумму натуральных элементов в промежутке от M до N");
 int firstNumber = ReadConsoleToInt($"Введите первое число (M): ");
-int numberN = ReadConsoleToInt($"Введите второе число(N): ");
-if (firstNumber < numberN && firstNumber > 0 && numberN > 0)
+int secondNumber = ReadConsoleToInt($"Введите второе число (N): ");
+if (firstNumber < secondNumber && firstNumber > 0 && secondNumber > 0)
 {
-    PrintNaturalNumbersInGivenInterval(firstNumber, numberN, 0);
+    PrintNaturalNumbersInGivenInterval(firstNumber, secondNumber, 0);
 }
 else
 {

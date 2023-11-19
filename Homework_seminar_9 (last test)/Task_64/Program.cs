@@ -29,9 +29,9 @@ int ReadConsoleToInt(string message)
 
 
 System.Console.Clear();
-System.Console.WriteLine("Данная рограмма выведет все чётные натуральные числа в промежутке от M до N");
+System.Console.WriteLine("Данная программа выведет все чётные натуральные числа в промежутке от M до N");
 int numberM = ReadConsoleToInt($"Введите первое число (M): ");
-int numberN = ReadConsoleToInt($"Введите второе число(N): ");
+int numberN = ReadConsoleToInt($"Введите второе число (N): ");
 if (numberM < numberN && numberM > 0 && numberN > 0)
 {
     PrintNaturalNumbersInGivenInterval(numberM, numberN);
