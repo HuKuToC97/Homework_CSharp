@@ -7,7 +7,7 @@
 
 void PrintNaturalNumbersInGivenInterval(int numberM, int numberN)
 {
-    if (numberN <= numberM)
+    if (numberN < numberM)
     {
         return;
     }
